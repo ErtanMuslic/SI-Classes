@@ -23,7 +23,6 @@ app.get('/sort',(req,res) => {
     list.reduce((prev,curr) =>{ list.sort(); } , 0 );
     res.send(JSON.stringify(list));
 
-
     // let min = list[0];
     // for(i = 0;i<list.length;i++){
     //     if(min > list[i]){
