@@ -20,7 +20,7 @@ app.get('/add',(req,res) =>{
 
 app.get('/sort',(req,res) => {
 
-    list.reduce((prev,curr) =>{ list.sort(); } , 0 );
+    list.reduce((prev,curr) =>{ list.sort(function(a,b){return a-b;}); } , 0 );
     res.send(JSON.stringify(list));
 
     // let min = list[0];
