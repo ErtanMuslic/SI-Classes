@@ -3,4 +3,6 @@ from django.http import HttpResponse
 # Create your views here.
 
 def solve(request):
-    return HttpResponse('hello')
+    msg = {'ime':'Ramiz','godina': 3}
+    msg[0]
+    return HttpResponse(msg)
